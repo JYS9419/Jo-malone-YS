@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 전예선 리뉴얼 디자인 - Jo_malone-London </title>
+  <!-- fv -->
+  <link rel="shoutcut icon" href="./image/jomalone-fv1.jpg">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/stylePc.css">
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./js/Jo_malone-YS.js"></script>
+  <!-- font link - google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all accordion items
+      var accordionItems = document.querySelectorAll('.accordion-item');
+
+      // Add click event listener to each accordion item
+      accordionItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          // Remove the 'is-animated' class from all items
+          accordionItems.forEach(function (item) {
+            item.classList.remove('is-animated');
+          });
+          // Add the 'is-animated' class to the clicked item
+          item.classList.add('is-animated');
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- ============================ header ============================ -->
+    <header>
+      <div class="header">
+        <div class="headerinner">
+          <!-- ==== logo ==== -->
+          <div class="jomalone-logo">
+            <img src="./image/jomalone-logo.svg" alt="조말론로고">
+          </div>
+          <!-- ==== icon 4종 ==== -->
+          <ul>
+            <li><a href="#"><img src="./image/search.svg" alt="검색"></a></li>
+            <li><a href="#"><img src="./image/account.svg" alt="내정보"></a></li>
+            <li><a href="#"><img src="./image/wishlist.svg" alt="위시리스트"></a></li>
+            <li><a href="#"><img src="./image/bag.svg" alt="장바구니"></a></li>
+          </ul>
+          <!-- ==== 헤더 메뉴 아이콘 1 ==== -->
+          <div class="headermenuicon1">
+            <a href="#">
+              <img src="./image/headermenuicon-1.svg" alt="헤더메뉴아이콘">
+            </a>
+          </div>
+          <!-- ==== 헤더 메뉴 아이콘 2 ==== -->
+          <div class="headermenuicon2">
+            <a href="#">
+              <img src="./image/headermenuicon-2.svg" alt="헤더메뉴아이콘">
+            </a>
+            <ul>
+              <li><a href="#">쇼핑하기</a></li>
+              <li><a href="#">선물하기</a></li>
+              <li><a href="#">서비스</a></li>
+              <li><a href="#">Jomalone-London House</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =========================== main ============================ -->
+    <main>
+      <!-- 1p -->
+      <div class="main_1p">
+        <!-- 아코디언 -->
+        <div id="jo-accordion" class="accordion">
+          <div class="accordion_01 accordion-item">
+            <a href="#"><span>Today's Perfume</span></a>
+          </div>
+          <div class="accordion_02 accordion-item">
+            <a href="#"><span>How to use Corong</span></a>
+          </div>
+          <div class="accordion_03 accordion-item">
+            <a href="#"><span>Night Collection</span></a>
+          </div>
+          <div class="accordion_04 accordion-item">
+            <a href="#"><span>Bestseller</span></a>
+          </div>
+        </div>
+        <!-- /아코디언 -->
+        <!-- 1p 백그라운드 gif -->
+        <div class="Gif_main">
+          <ul>
+            <li>
+              <span>"Scent is the most powerful sense of memory"</span>
+            </li>
+            <li>
+              <p>
+                Fill your fragrances
+                <br>
+                with the most beloved products,
+                <br>
+                inspiration for the perfect gift,
+                <br>
+                everyday delights and new routines.
+              </p>
+            </li>
+          </ul>
+          <img src="./image/GIF1.gif" alt="꽃-gif">
+        </div>
+      </div>
+      <!-- 2p -->
+      <div class="main_2p">
+        <div class="Today">
+          <h1>Today's Perfume</h1>
+          <a href="#">
+            <img class="Perfume" src="./image/Jasmine-img.jpg" alt="자스민배경">
+          </a>
+          <!-- 자스민민트코롱 소개 -->
+          <div class="Mint-Cologne">
+            <img src="./image/jo_White-Jasmine_Mint.png" alt="자스민민트코롱">
+          </div>
+          <div class="Mint">
+            <ul>
+              <li class="en_Mint1">
+                <p>White Jasmine & Mint Cologne</p>
+              </li>
+              <li class="ko_Mint1">
+                <p>화이트 자스민 앤 민트 코롱</p>
+              </li>
+              <li class="en_Mint2">
+                <p>₩220,000</p>
+              </li>
+              <li class="ko_Mint2">
+                <p>
+                  햇살이 퍼지는 영국 시골 정원의 아침. 바로 딴 야생 민트와 자스민, 백합,
+                  <br>
+                  오렌지 꽃과 장미로 만들어진 부케의 향이 어우러진 마법같은 향을
+                  <br>
+                  선사합니다.
+                </p>
+              </li>
+              <li>
+                <p class="en_Mint3">
+                  A morning in the English country garden where the sun is
+                  <br>
+                  spreading. It offers a magical scent with the scent of bouquet
+                  <br>
+                  made of freshly picked wild mint and jasmine, lilies, orange
+                  <br>
+                  flowers and roses.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- 2p - Top Notes -->
+          <div class="Top">
+            <ul>
+              <li class="en_1">
+                <p>Top Notes</p>
+              </li>
+              <li class="Mint_cor">
+                <p>Mint</p>
+              </li>
+              <li class="mg-b-20">
+                <p>민트 잎</p>
+              </li>
+              <li class="ko_1">
+                <p>
+                  상쾌한 풀 향이 나는 민트 잎은 깨끗하고
+                  <br>
+                  달콤한 느낌을 살짝 더해주며, 하트 노트의
+                  <br>
+                  자스민과 완벽한 조화를 이룹니다.
+                </p>
+              </li>
+              <li class="en_2">
+                <p>
+                  The refreshing grassy mint leaves
+                  <br>
+                  add a touch of clean and sweet,
+                  <br>
+                  perfect harmony with the heart
+                  <br>
+                  note's jasmine.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- 2p - Heart Notes -->
+          <div class="Heart">
+            <ul>
+              <li class="en_1">
+                <p>Heart Notes</p>
+              </li>
+              <li class="Jasmine_cor">
+                <p>Airroom Jasmine</p>
+              </li>
+              <li class="mg-b-20">
+                <p>에어룸 자스민</p>
+              </li>
+              <li class="ko_1">
+                <p>
+                  자극적이고 관능적인 하얀 꽃이 꽃다발에
+                  <br>
+                  광채를 더해줍니다.
+                </p>
+              </li>
+              <li class="en_2">
+                <p>
+                  A pungent, sensual white flower
+                  <br>
+                  aadds radiance to the bouquet.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- 2p - Base Notes -->
+          <div class="Base">
+            <ul>
+              <li class="en_1">
+                <p>Base Notes</p>
+              </li>
+              <li class="Mate_cor">
+                <p>Mate</p>
+              </li>
+              <li class="mg-b-20">
+                <p>마테</p>
+              </li>
+              <li class="ko_1">
+                <p>
+                  신선한 그린 노트가 잎의 상쾌한 느낌으로
+                  <br>
+                  스며듭니다.
+                </p>
+              </li>
+              <li class="en_2">
+                <p>
+                  Fresh green notes soak in the
+                  <br>
+                  refreshing feeling of leaves.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 3p -->
+      <div class="main_3p">
+        <div class="h1">
+          <p>How to use Corong</p>
+        </div>
+        <div class="Corong">
+          <a href="#">
+            <img src="./image/GIF5.gif" alt="코롱사용법">
+          </a>
+          <div class="How_to_use_Corong">
+            <ul>
+              <li>
+                <p>코롱 사용법</p>
+              </li>
+              <li>
+                <p>
+                  코롱에 관한 다양한 에티켓을 살펴보고
+                  <br>
+                  프레그런스 전문가처럼 향을 입는 방법을
+                  <br>
+                  알아보세요.
+                </p>
+              </li>
+              <li>
+                <a href="#">
+                  <p>더 보기</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 4p -->
+      <div class="main_4p">
+        <div class="bg1">
+          <img src="./image/GIF6.gif" alt="나이트컬렉션소개">
+          <ul>
+            <li>
+              <p>Night Collection</p>
+            </li>
+            <li>
+              <p>
+                라벤더 앤 문플라워와
+                <br>
+                문릿 캐모마일 컬렉션의 다양한 향이
+                <br>
+                선사하는 밤의 영감을 얻어보세요.
+              </p>
+            </li>
+            <li>
+              <p>지금 보기</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bg2">
+        </div>
+        <div class="bg3">
+        </div>
+        <div class="bg4">
+          <div class="svg1">
+            <img src="./image/Night-Collection_pc1.svg" alt="나이트컬렉션배경1">
+          </div>
+        </div>
+        <div class="bg5">
+          <div class="svg2">
+            <img src="./image/Night-Collection_pc2.svg" alt="나이트컬렉션배경2">
+          </div>
+        </div>
+      </div>
+      <!-- 5p -->
+      <div class="main_5p">
+        <div class="listbg">
+          <p>Bestseller</p>
+          <img src="./image/Bunch-of-gentle-flower-twigs.jpg" alt="5페이지배경">
+        </div>
+        <div class="White">
+          <img src="./image/jo_mini_White.png" alt="화이트자스민앤민트향수">
+          <ul>
+            <li>
+              <p>White Jasmine & Mint Cologne</p>
+            </li>
+            <li>
+              <p>화이트 자스민 앤 민트 코롱</p>
+            </li>
+            <li>
+              <p>₩220,000</p>
+            </li>
+          </ul>
+        </div>
+        <div class="Blackberr">
+          <img src="./image/jo_mini_Blackberry.png" alt="블랙배리앤베이향수">
+          <ul>
+            <li>
+              <p>Blackberry & Bay Cologne</p>
+            </li>
+            <li>
+              <p>블랙베리 앤 베이 코롱</p>
+            </li>
+            <li>
+              <p>₩220,000</p>
+            </li>
+          </ul>
+        </div>
+        <div class="wood">
+          <img src="./image/jo_mini_Wood.png" alt="우드세이지앤씨솔트향수">
+          <ul>
+            <li>
+              <p>Wood Sage & Sea Salt Cologne</p>
+            </li>
+            <li>
+              <p>우드 세이지 앤 씨 솔트 코롱</p>
+            </li>
+            <li>
+              <p>₩220,000</p>
+            </li>
+          </ul>
+        </div>
+        <!-- 6p - 하단화살표 -->
+        <a href="#" class="btnTop">
+          <img src="./image/btn-arrow.svg" alt="최상단이동화살표">
+        </a>
+      </div>
+    </main>
+    <!-- ============================ footer ============================ -->
+    <footer>
+      <div class="footerinner">
+        <div class="service">
+          <!-- footer 1 -->
+          <ul>
+            <li>
+              <p>고객 서비스</p>
+            </li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">고객관리지원팀</a></li>
+            <li><a href="#">나의 프로필</a></li>
+            <li><a href="#">나의 오더</a></li>
+            <li><a href="#">주문 조회</a></li>
+            <li><a href="#">교환 및 환불 규정</a></li>
+            <li><a href="#">온라인 부티크 쇼핑</a></li>
+          </ul>
+          <!-- footer 2 -->
+          <ul>
+            <li>
+              <p>회사 소개</p>
+            </li>
+            <li><a href="#">법인 정보</a></li>
+            <li><a href="#">커리어</a></li>
+          </ul>
+          <!-- footer 3 -->
+          <ul>
+            <li>
+              <p>소셜 네트워크</p>
+            </li>
+            <li><a href="#">인스타그램</a></li>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">유튜브</a></li>
+          </ul>
+        </div>
+        <!-- 하단 footer -->
+        <div class="jomalone">
+          <ul>
+            <li>
+              <p>&copy; Jo Malone London 2021</p>
+            </li>
+            <li><a href="#">대한민국</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+          <a href="#">
+            <img src="./image/Landing-page_Trustmark_KR_Desktop.png" alt="조말론">
+          </a>
+          <!-- <ul>
+            
+          </ul> -->
+          <p>
+            이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232
+            <br>
+            사업자등록번호: 211-81-71889
+            <br>
+            통신판매업신고번호: 강남-15737호
+            <br>
+            <a href="#">사업자정보조회</a>
+            <br>
+            고객관리지원팀: <a href="#">(02) 6971-3228</a>
+            <br>
+            호스팅서비스 사업자: ㈜엘지유플러스
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
